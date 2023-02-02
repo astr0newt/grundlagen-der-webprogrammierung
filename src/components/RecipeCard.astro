@@ -1,0 +1,64 @@
+---
+const { recipename, photoname, photodescription, duration, tag } = Astro.props;
+---
+
+<div class="w-56 border-black border-t-1">
+  <a href="/inprogress">
+    <div class="mb-4 overflow-hidden">
+      <img
+        class="hover:scale-110 transition-transform ease-in-out"
+        src={`/img/${photoname}`}
+        alt={photodescription}
+      />
+    </div>
+
+    <h2
+      class="font-sans text-xl font-semibold mb-2 hover:underline hover:underline-offset-4"
+    >
+      {recipename}
+    </h2>
+
+    <ul>
+      <li>
+        <svg
+          class="fill-none w-4 h-4 inline-block align-middle"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          ><path
+            d="M8 13.875a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            vector-effect="non-scaling-stroke"></path><path
+            d="M8 8.375 10.475 5.9M6.5.875h3"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            vector-effect="non-scaling-stroke"></path></svg
+        >
+        <span class="inline-block align-middle">{duration}</span>
+      </li>
+
+      <li>
+        <svg
+          class="fill-none w-4 h-4 inline-block align-middle"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          class="RecipeCard_metaIcon__RH7hh"
+          ><path
+            d="M10 6L2.5 13.5"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            vector-effect="non-scaling-stroke"></path><path
+            d="M4.00006 12C1.00006 7.00001 5.00006 2 13.5001 2.5C14.0001 11 9.00005 15 4.00006 12Z"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            vector-effect="non-scaling-stroke"></path></svg
+        >
+        <span class="inline-block align-middle">{tag}</span>
+      </li>
+    </ul>
+  </a>
+</div>

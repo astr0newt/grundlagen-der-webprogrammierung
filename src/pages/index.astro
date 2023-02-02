@@ -1,11 +1,61 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting.jsx";
+import RecipeCard from "../components/RecipeCard.astro";
 
 const pageTitle = "Home Page";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+<BaseLayout>
+  <div class="container relative text-center mb-8">
+    <img
+      src="/img/hero_section.png"
+      alt="An empty kitchen counter with some flour on it"
+      class="w-full"
+    />
+    <div
+      class="w-full px-52 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex-wrap"
+    >
+      <h1
+        class="lg:text-4xl md:text-2xl sm:text-base font-semibold leading-tight"
+      >
+        Einzigartige Veggie-Rezepte aus den Küchen der Welt
+      </h1>
+      <p
+        class="font-sans lg:text-xl md:text-base sm:text-sm xs:text-sm px-8 sm:px-4"
+      >
+        Entdecke die besten fleisch- und fischlosen Rezepte &#129367 und rette
+        dabei ein bisschen den Planeten &#127758;
+      </p>
+    </div>
+  </div>
   <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <div class="flex justify-between mb-8">
+    <RecipeCard
+      recipename="Israelischer Eintopf mit Bohnen & Chili"
+      photoname="israeli_stew.jpg"
+      alt="Bild einer Portion israelischen Eintopfs mit Bohnen und Chili in einer Schüssel"
+      duration="45 Minuten"
+      tag="Vegan"
+    />
+    <RecipeCard
+      recipename="Mediterraner Salat mit Granatapfel & Minze"
+      photoname="mediterranean_salad.jpg"
+      alt="Bild einer Portion mediterranem Salats auf einer Platte"
+      duration="30 Minuten"
+      tag="Vegan"
+    />
+    <RecipeCard
+      recipename="Sommer-Pasta mit getrockneten Tomaten"
+      photoname="summer_pasta.jpg"
+      duration="30 Minuten"
+      tag="Vegetarisch"
+    />
+    <RecipeCard
+      recipename="Milchshake New York Style"
+      photoname="milkshake_new_york_style.jpg"
+      duration="15 Minuten"
+      tag="Vegetarisch"
+    />
+  </div>
 </BaseLayout>

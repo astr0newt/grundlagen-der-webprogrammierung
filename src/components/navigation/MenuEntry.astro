@@ -1,0 +1,9 @@
+---
+const { title, url } = Astro.props;
+---
+
+<li>
+  <p class="hover:underline hover:underline-offset-4">
+    <a href={`/$url`}>{title}</a>
+  </p>
+</li>
