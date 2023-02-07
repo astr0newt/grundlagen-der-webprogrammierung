@@ -4,6 +4,10 @@ const { title, url } = Astro.props;
 
 <li>
   <p class="hover:underline hover:underline-offset-4">
-    <a href={`/$url`}>{title}</a>
+    <!-- <a href={`/$url`}>{title}</a> -->
+    <a
+      href="javascript: window.confirm('Diese Seite existiert noch nicht. Schau später noch einmal vorbei!')"
+      >{title}</a
+    >
   </p>
 </li>

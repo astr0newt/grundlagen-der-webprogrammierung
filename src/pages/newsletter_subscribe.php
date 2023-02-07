@@ -1,5 +1,5 @@
 ---
-const pageTitle = "Home Page";
+const pageTitle = "Welcome to the Yummy club!";
 ---
 
 <?php
