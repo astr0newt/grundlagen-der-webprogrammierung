@@ -10,6 +10,7 @@ const pageTitle = "Home Page";
 
 <BaseLayout>
   <HeroSection />
+  <!-- client:load makes the component JavaScript load and hydrate (rendered onto the page without JavaScript) immediately on page load. -->
   <Greeting
     client:load
     messages={[
