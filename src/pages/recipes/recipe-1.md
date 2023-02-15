@@ -7,7 +7,7 @@ nutrition: "Vegan"
 chef: "Yotam Ottolenghi"
 description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
 image:
-url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+src: "../../../public/img/israeli_stew.jpg"
 alt: "Ein Kochtopf voll von israelischem Eintopf mit einem Kochlöffel darauf"
 tags: ["Israelisch", "Eintopf", "International"]
 ---
