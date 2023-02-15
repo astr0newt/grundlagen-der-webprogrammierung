@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/RecipeFullLayout.astro
 
-title: Israelischer Eintopf mit Bohnen & Chili
-duration: 45 Minuten
-type: Vegan
-by: Yotam Ottolenghi
+title: "Israelischer Eintopf mit Bohnen & Chili"
+duration: "45 Minuten"
+nutrition: "Vegan"
+chef: "Yotam Ottolenghi"
 description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
 image:
-  src: "../../../public/img/isreali_stew.jpg"
-  alt: "Ein Kochtopf voll von israelischem Eintopf mit einem Kochlöffel darauf"
+url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+alt: "Ein Kochtopf voll von israelischem Eintopf mit einem Kochlöffel darauf"
 tags: ["Israelisch", "Eintopf", "International"]
 ---
 

@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addUtilities }) {
-      const myUtilities = { ".bg-agua": { background: "agua" } };
+      const myUtilities = { ".bg-aqua": { background: "aqua" } };
       addUtilities(myUtilities);
     }),
   ],
