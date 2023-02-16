@@ -5,12 +5,12 @@ import Greeting from "../components/Greeting.jsx";
 import HeroSection from "../components/HeroSection.astro";
 import RecipeSection from "../components/RecipeSection.astro";
 
-const pageTitle = "Home Page";
+const pageTitle = "Yummy";
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <HeroSection />
-  <!-- client:load makes the component JavaScript load and hydrate (rendered onto the page without JavaScript) immediately on page load. -->
+  <!-- client:load makes the component load and hydrate (that means rendered onto the page) immediately on page load. -->
   <Greeting
     client:load
     messages={[
